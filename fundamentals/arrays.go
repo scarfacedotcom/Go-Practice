@@ -20,8 +20,8 @@ func checkCleanliness(rooms [4]Room) {
 }
 func main() {
 	rooms := [...]Room{
-		{name: "bedroom"},
-		{name: "office"},
+		{name: "bedroom", cleaned: true},
+		{name: "office", cleaned: true},
 		{name: "warehouse"},
 		{name: "oops"},
 	}
