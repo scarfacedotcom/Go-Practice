@@ -16,6 +16,7 @@
 
 package main
 
+//Scar Face
 import (
 	"fmt"
 	"math/rand"
@@ -40,13 +41,13 @@ func main() {
 		fmt.Println("Total sum", sum)
 		switch sum := sum; {
 		case sum == 2 && dice == 2:
-			fmt.Println("snake Eyes")
+			fmt.Println("Outcome: snake Eyes")
 		case sum == 7:
-			fmt.Println("lukcy 7")
+			fmt.Println("Outcome: lukcy 7")
 		case sum%2 == 0:
-			fmt.Println("Even")
+			fmt.Println("Outcome: Even")
 		case sum%2 == 1:
-			fmt.Println("Odd")
+			fmt.Println("Outcome: Odd")
 		}
 	}
 }
