@@ -26,10 +26,19 @@ func showLine(line []Part) {
 }
 func main() {
 	assemblyLine := make([]Part, 3)
-	assemblyLine[0]:= "scar"
-	assemblyLine[1] := "face"
-	assemblyLine[2] := "jr"
+	assemblyLine[0] = "scar"
+	assemblyLine[1] = "face"
+	assemblyLine[2] = "jr"
 
-	fmt.Println("print 3 parts",)
+	fmt.Println("print 3 parts")
 	showLine(assemblyLine)
+
+	assemblyLine = append(assemblyLine, "joyce", "kadi")
+	fmt.Println("new parts added")
+	showLine(assemblyLine)
+
+	assemblyLine = assemblyLine[3:]
+	fmt.Println("sliced assembly")
+	showLine(assemblyLine)
+
 }
