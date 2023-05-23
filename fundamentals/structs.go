@@ -20,4 +20,26 @@ func main() {
 	)
 	fmt.Println(scar)
 	fmt.Println(face)
+
+	var jay Passenger
+	jay.Name = "Jay"
+	jay.TicketNumber = 4
+	fmt.Println(jay)
+
+	scar.Boarded = false
+	face.Boarded = true
+
+	if face.Boarded {
+		fmt.Println("face has boarded the bus")
+	}
+	if scar.Boarded {
+		fmt.Println(scar.Name, "has boarded the bus")
+	} else {
+		fmt.Println(scar.Name, "has not boarded the bus yet")
+	}
+
+	jay.Boarded = true
+	bus := Bus{jay}
+	fmt.Println(bus)
+	fmt.Println(bus.FrontSeat.Name, "is in the front seat")
 }
