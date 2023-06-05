@@ -2,8 +2,16 @@ package main
 
 import "fmt"
 
+func changeValue(str *string) {
+	*str = "changed"
+}
+func changeValue2(str string) {
+	str = "changed"
+}
+
 func main() {
-	x := 42
-	y := &x
-	fmt.Println(*y)
+	toChange := "hello"
+	fmt.Println(toChange)
+	changeValue(&toChange)
+	fmt.Println(toChange)
 }

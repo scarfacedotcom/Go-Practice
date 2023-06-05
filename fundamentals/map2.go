@@ -14,4 +14,12 @@ func main() {
 	delete(shoppingList, "milk")
 	fmt.Println("Milk has now been deleted", shoppingList)
 
+	fmt.Println("Hey, i need", shoppingList["eggs"], "eggs")
+	bread, found := shoppingList["bread"]
+	fmt.Println("need bread")
+	if !found {
+		fmt.Println("nope")
+	} else {
+		fmt.Println("yes", bread, "loaves")
+	}
 }
