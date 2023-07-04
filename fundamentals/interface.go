@@ -29,6 +29,14 @@ fmt.Printf("The cat name %s has recieved affection from Human name %s\n", c.Name
 func (c Cat) GiveAffection(from Human) {
 	fmt.Printf("The cat name %s has recieved affection from Human name %s\n", c.Name, from.Firstname)	
 }
+
+func (d Dog) ReceiveAffection(from Human) {
+	fmt.Printf("The dog %s has recieved affection from Human name %s\n", d.Name, from.Firstname)
+}
+
+func (d Dog) GiveAffection(from Human) {
+	fmt.Printf("The dog %s has recieved affection from Human name %s\n", d.Name, from.Firstname)
+}
 func ()  {
 	
 }
