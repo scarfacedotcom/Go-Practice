@@ -42,6 +42,7 @@ func main() {
 	for _, toy := range toys {
 		toy.Play()
 	}
+	fmt.Println(car)
 
 	// PlayWithToy(car)
 	// PlayWithToy(airplane)
