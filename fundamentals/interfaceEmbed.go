@@ -18,7 +18,6 @@ func (d Dog) Sleep() {
 }
 
 type Bird struct {
-	
 }
 
 func (b Bird) Eat() {
@@ -28,6 +27,38 @@ func (b Bird) Eat() {
 func (b Bird) Sleep() {
 	fmt.Println("The bird is sleeping")
 }
-func ()  {
-	
+
+type Flying interface {
+	Fly()
+}
+
+type FlyingAnimal interface {
+	Animal
+	Flying
+}
+
+type Eagle struct {
+}
+
+func (e Eagle) Eat() {
+	fmt.Println("The eagle is eating")
+}
+
+func (e Eagle) Sleep() {
+	fmt.Println("the eagle is sleeping")
+}
+
+func (e Eagle) Fly() {
+	fmt.Println("the eagle is flying")
+}
+
+func main() {
+	dog := Dog{}
+	bird := Bird{}
+	eagle := Eagle{}
+
+	dog.Eat()
+	bird.Sleep()
+	eagle.Eat()
+	eagle.Fly()
 }
