@@ -55,7 +55,7 @@ func (e Eagle) Fly() {
 func main() {
 	dog := Dog{}
 	bird := Bird{}
-	eagle := Eagle{}
+	eagle := Eagles{}
 
 	dog.Eat()
 	bird.Sleep()
