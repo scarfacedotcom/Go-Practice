@@ -6,7 +6,7 @@ func main() {
 	shoppingList := make(map[string]int)
 	shoppingList["eggs"] = 11
 	shoppingList["bama"] = 10
-	shoppingList["tea"] = 3
+	shoppingList["tea"] = 4
 	shoppingList["milk"] += 1
 	shoppingList["eggs"] += 1
 
